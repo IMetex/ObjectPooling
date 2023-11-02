@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5e7f89e773c383479460fabf9c61b96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _bulletPartical: {fileID: 0}
+  _bulletPartical: {fileID: 195900, guid: ec61825cb06be72419bb09eee03af08c, type: 3}
 --- !u!50 &5324075072728828494
 Rigidbody2D:
   serializedVersion: 4
@@ -171,4 +171,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 0

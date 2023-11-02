@@ -8,7 +8,7 @@ public class ObjectPool : MonoBehaviour
 {
     public static ObjectPool instance;
     private List<GameObject> pooledObjects = new List<GameObject>();
-    
+
     [SerializeField] private int amountPool;
     [SerializeField] private GameObject prefabObject;
 
@@ -29,6 +29,17 @@ public class ObjectPool : MonoBehaviour
             pooledObjects.Add(obj);
         }
     }
-    
-    public void GetObject   
+
+    public GameObject GetPooledObject()
+    {
+        for (int i = 0; i < amountPool; i++)
+        {
+            if (!pooledObjects[i].activeInHierarchy)
+            {
+                return pooledObjects[i];
+            }
+        }
+
+        return null;
+    }
 }
